@@ -55,7 +55,7 @@ const CTA = () => {
             </select>
           </div>
           <div>
-            <select name="Customer" id="" className="CTAInput" required>
+            <select name="Customer" className="CTAInput" required>
               <option value="" disabled selected hidden>
                 Are You A New Customer?
               </option>
