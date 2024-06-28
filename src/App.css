@@ -341,7 +341,6 @@ body{
 
 /* Services */
 .containerServ{
-    /* background-image: linear-gradient(to bottom, #cdaa7d 10%, #ffffff); */
     background-color: #ffffff;
     padding: 1%;
     border-radius: 2rem;
@@ -349,14 +348,20 @@ body{
     color: rgb(0, 0, 0);
     border: 2px solid black;
 }
-.containerServ a{
-    border: 3px solid black;
+.estimate{
+    background-color: #24a060;
+    margin-top: 20%;
+    border: 2px solid black;
+    padding: 8px;
+    width: 50%;
     font-weight: bold;
-    background-color: #24a060 !important;
+    transition: .25s;
+    border-radius: .5rem;
     color: white;
+    max-height: 15px;
 }
-.containerServ a:hover{
-    border: 3px solid black;
+.estimate:hover{
+    background-color: black !important;
 }
 .servicesContainer{
     display: flex;

@@ -24,7 +24,7 @@ const Services = () => {
                 </div>
             ))}
         </div>
-        <Link to="/contact" className='btn'>Get Free Estimate!</Link>
+        <Link to="/contact" className='estimate'>Get Free Estimate!</Link>
     </div>
   )
 }
