@@ -2,8 +2,7 @@ import { React, useState } from "react";
 
 const CTA = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
     email: "",
     phoneNumber: "",
     address: "",
@@ -15,23 +14,25 @@ const CTA = () => {
   return (
     <div className="text-center CTA">
       <div className="about text-center">
-      <h1>We <span className="highlight">Pride</span> Ourselves on Quality.</h1>
-        <p>
-        Transform your lawn into a lush oasis with our premium lawn care service, where quality is not just a promise but a way of life. Experience the difference with our meticulous attention to detail and commitment to delivering the greenest, healthiest, envy-inducing lawn on the block.
-        </p>
+        <div className="overlay">
+        <h1>We Pride Ourselves on <span className="highlight">Quality</span></h1>
+            <p>
+            Transform your lawn into a lush oasis with our premium lawn care service, where quality is not just a promise but a way of life. Experience the difference with our meticulous attention to detail and commitment to delivering the greenest, healthiest, envy-inducing lawn on the block.
+            </p>
+            <a className="callbutton" href="tel:7203547497">Give us a Call!</a>
+        </div>
       </div>
       <div className="CTAForm">
-        <h2>Get A <span className="highlight">FREE </span>Estimate</h2>
+        <h2>Get A <span className="highlight">FREE</span> Estimate</h2>
         <form action="">
           <div>
             <input
               type="text"
-              name="firstName"
-              placeholder="First Name"
+              name="fullName"
+              placeholder="Full Name"
               className="CTAInput"
               required
             />
-            <input type="text" name="lastName" className="CTAInput" placeholder="Last Name" />
           </div>
           <div>
             <input type="text" name="email" className="CTAInput" placeholder="Email" required />
@@ -40,7 +41,6 @@ const CTA = () => {
               name="phoneNumber"
               placeholder="Phone"
               className="CTAInput"
-              required
             />
           </div>
           <div>
@@ -49,9 +49,10 @@ const CTA = () => {
                 <option value="Service" disabled selected hidden>
                     Select Service
                 </option>
-                <option value="Residential">Residential Pumping</option>
-                <option value="Residential">Commercial Pumping</option>
-                <option value="Residential">Septic Inspection</option>
+                <option value="Disposal">Disposal and Cleanup</option>
+                <option value="Construction">Construction and Installation</option>
+                <option value="Design">Design Services</option>
+                <option value="plantCare">Plant Care and Management</option>
             </select>
           </div>
           <div>
@@ -62,14 +63,6 @@ const CTA = () => {
               <option value="">Yes, I am a New Customer.</option>
               <option value="">No, I am not a New Customer.</option>
             </select>
-            <textarea
-              name="comments"
-              id="comments"
-              cols="30"
-              rows="2"
-              placeholder="Comments"
-              className="CTAInput"
-            ></textarea>
           </div>
           <input type="Submit" className="CTASubmit" value={"Submit"} />
         </form>

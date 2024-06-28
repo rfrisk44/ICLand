@@ -8,16 +8,16 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Testimonials = () => {
   const list = [
     {
-      quote: "Wow, Quick on doing the Job that needed to be Done. Had a Tree fall into the Side yard from the Wind. Not only took that out but also Racked up the Whole Yard. GREAT JOB",
-      author: "Bob Luethje",
+      quote: "Iggy and his crew were amazing 🤩 They were very good at what they do…we had a lot of concrete work done and They were great!! Also helped us out with some drainage issues and we will be hiring them again for any future projects…check them out!! We couldn’t be happier.",
+      author: "Amanda Stephens",
     },
     {
-      quote: "We had an incredible crew clean out our front and back yard. They worked all day and got the job done. It looks incredible and exceeded expectation. On time and commutative the entire day.",
-      author: "Teale Stone",
+      quote: "Really satisfied with the landscaping and concrete work they did at my house. Will recommend them for any of your future products!",
+      author: "Esmeralda Mendoza",
     },
     {
-      quote: "That was the best yard service crew ever they worth every penny, this guys are more expensive but it definitely worth, thank you VOX we will continue doing business forever.",
-      author: "Johhny Chavez",
+      quote: "I highly Recommend I.C. Landscaping! Trustworthy, respectful, and reliable!!",
+      author: "Miranda Burke",
     },
   ];
 
