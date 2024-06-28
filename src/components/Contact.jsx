@@ -13,11 +13,11 @@ const Contact = () => {
         <form onSubmit={submitForm}>
             <h1>Contact Us</h1>
             <div className='info'>
-                <input type="text" placeholder='Name'/>
-                <input type="email" name="" id="" placeholder='Email'/>
+                <input type="text" placeholder='Name' required/>
+                <input type="email" name="" id="" placeholder='Email' required/>
             </div>
             <input type="tel" name="" id="" placeholder='Phone Number'/>
-            <textarea name="" id="" rows={5} placeholder='Any Questions or Compliments'></textarea>
+            <textarea name="" required id="" rows={5} placeholder='Any Questions or Compliments'></textarea>
             <input type="submit" value="Submit" id='submit'/>
         </form>
     </div>

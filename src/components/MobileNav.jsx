@@ -37,7 +37,7 @@ const MobileNav = () => {
           <Link className="side-nav-link" to="/contact" onClick={handleLinkClick}><MdConnectWithoutContact />Contact</Link>
           <Link className="side-nav-link" to="/gallery" onClick={handleLinkClick}><SlPicture />Gallery</Link>
         </nav>
-        <a href='tel:7203547497' id='mobileButton'><IoCallSharp size={30}/> Call Us Now</a>
+        <a href='tel:7206417228' id='mobileButton'><IoCallSharp size={30}/> Call Us Now</a>
         <div id='mobileSocial'>
             <a href="https://www.facebook.com/ICLandscape?mibextid=LQQJ4d" className="btn socials"><FaFacebook size={30} /></a>
             <a href="https://www.yelp.com/biz/ic-landscaping-and-concrete-brighton-2#location-and-hours" className="btn socials"><FaYelp size={30} /></a>

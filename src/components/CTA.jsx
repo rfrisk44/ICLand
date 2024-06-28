@@ -50,7 +50,7 @@ const CTA = () => {
             and commitment to delivering the greenest, healthiest, envy-inducing
             lawn on the block.
           </p>
-          <a className="callbutton" href="tel:7203547497">
+          <a className="callbutton" href="tel:7206417228">
             Give us a Call!
           </a>
         </div>
