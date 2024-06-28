@@ -26,7 +26,7 @@ const Gallery = () => {
           <img
             key={index}
             src={image}
-            alt={`Gallery Image ${index + 1}`}
+            alt={`Photos of Landscaping quality ${index + 1}`}
             className="gallery-image"
             onClick={() => handleShow(image)}
             style={{ cursor: 'pointer' }}

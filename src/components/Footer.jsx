@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook} from "react-icons/fa";
 import { SiHomeadvisor } from "react-icons/si";
 import { FaYelp } from "react-icons/fa";
 import logo from './images/1.jpg'

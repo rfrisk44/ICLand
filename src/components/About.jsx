@@ -29,7 +29,7 @@ const About = () => {
             <div className='aboutPicWrapper'>
                 <img 
                 src={pool} 
-                alt="Quality Landscaping Picture" 
+                alt="Quality Landscaping" 
                 className='aboutPic' />
             </div>
         </div>
