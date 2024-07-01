@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaBars } from 'react-icons/fa';
-import { IoBook } from "react-icons/io5";
-import { IoCloseSharp } from 'react-icons/io5';
+import { FaHome, FaBars, FaFacebook, FaYelp, FaHammer } from 'react-icons/fa';
+import { IoBook, IoCloseSharp, IoCallSharp } from "react-icons/io5";
 import { SlPicture } from "react-icons/sl";
 import { MdConnectWithoutContact } from "react-icons/md";
-import { IoCallSharp } from "react-icons/io5";
-import { FaFacebook } from 'react-icons/fa';
-import { FaYelp } from "react-icons/fa";
 import { SiHomeadvisor } from "react-icons/si";
 
 const MobileNav = () => {
@@ -35,6 +31,7 @@ const MobileNav = () => {
           <Link className="side-nav-link" to="/" onClick={handleLinkClick}><FaHome /> Home</Link>
           <Link className="side-nav-link" to="/about" onClick={handleLinkClick}><IoBook />About</Link>
           <Link className="side-nav-link" to="/contact" onClick={handleLinkClick}><MdConnectWithoutContact />Contact</Link>
+          <Link className="side-nav-link" to="/services" onClick={handleLinkClick}><FaHammer />Services</Link>
           <Link className="side-nav-link" to="/gallery" onClick={handleLinkClick}><SlPicture />Gallery</Link>
         </nav>
         <a href='tel:7206417228' id='mobileButton'><IoCallSharp size={30}/> Call Us Now</a>

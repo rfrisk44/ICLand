@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
+import { useNavigate } from "react-router-dom";
 
 const CTA = () => {
+
+    const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -19,22 +24,28 @@ const CTA = () => {
     }));
   };
 
-  const submitForm = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can handle the form data, e.g., send it to a server
-    console.log(formData);
 
-    // You can also reset the form after submission if needed
-    setFormData({
-      fullName: "",
-      email: "",
-      phoneNumber: "",
-      address: "",
-      service: "",
-      customer: "",
-      comments: "",
-    });
-  };
+    try {
+        await emailjs.sendForm('service_bp1q448', 'template_f0csbra', e.target, 'mOHI7r4hSNJNi6RUx');
+      setFormData({
+        fullName: '',
+        email: '',
+        phoneNumber: '',
+        address: '',
+        service: '',
+        customer: '',
+        comments: '',
+      });
+
+      e.target.reset();
+      navigate('/thankyou'); // Assuming you are using React Router for navigation
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      alert('Failed To Send Email');
+    }
+}
 
   return (
     <div className="text-center CTA">
@@ -59,7 +70,7 @@ const CTA = () => {
         <h2>
           Get A <span className="highlight">FREE</span> Estimate
         </h2>
-        <form onSubmit={submitForm}>
+        <form onSubmit={handleSubmit}>
           <div>
             <input
               type="text"
@@ -113,7 +124,7 @@ const CTA = () => {
               <option value="Disposal">Disposal and Cleanup</option>
               <option value="Construction">Construction and Installation</option>
               <option value="Design">Design Services</option>
-              <option value="plantCare">Plant Care and Management</option>
+              <option value="Plant Care">Plant Care and Management</option>
             </select>
           </div>
           <div>

@@ -17,7 +17,7 @@ const About = () => {
         <div className='text-center'>
             <div className='dream'>
                 <h2>Let’s Create Your Dream Landscape <PiTreeFill/></h2>
-                <p>At IC Landscaping Corp. we are more than just a landscaping company – we are your partners in creating a beautiful, functional, and sustainable outdoor environment. Experience the difference with our premium services and let us help you bring your vision to life. Ready to transform your landscape? Give us a <a href="tel:7203547497"><FaPhoneFlip/> Call Today</a> or <Link to="/contact"><FaMessage/> contact us for a free estimate and consultation</Link>. We look forward to working with you!</p>
+                <p>At IC Landscaping Corp. we are more than just a landscaping company – we are your partners in creating a beautiful, functional, and sustainable outdoor environment. Experience the difference with our premium services and let us help you bring your vision to life. Ready to transform your landscape? Give us a <a href="tel:7206417228"><FaPhoneFlip/> Call Today</a> or <Link to="/contact"><FaMessage/> contact us for a free estimate and consultation</Link>. We look forward to working with you!</p>
             </div>
         </div>
 

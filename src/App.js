@@ -11,14 +11,15 @@ import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Gallery from './components/Gallery.jsx';
 import ThankYou from './components/ThankYou.jsx';
+import ServicesPage from './components/ServicesPage.jsx';
 
 function App() {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1520);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 1600);
+            setIsMobile(window.innerWidth < 1520);
         };
 
         window.addEventListener('resize', handleResize);
@@ -32,6 +33,7 @@ function App() {
             <Route path='/' element={[<CTA/>, <Testimonials/>,<Services/>]}/>
             <Route path='/about' element={[<About/>]}/>
             <Route path='/contact' element={<Contact/>}/>
+            <Route path='/services' element={<ServicesPage/>}/>
             <Route path='/gallery' element={<Gallery/>}/>
             <Route path='/thankyou' element={<ThankYou/>}/>
         </Routes>
